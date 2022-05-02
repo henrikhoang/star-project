@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#c37c6c</color>
+    <color name="secondary">#fbf4e7</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_job_title">#74D29406</color>
+    <color name="add_max_text_color">#E40606</color>
+</resources>

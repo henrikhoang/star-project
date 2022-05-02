@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/margin_12">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ivAvatar"
+        android:layout_width="@dimen/image_size_default"
+        android:layout_height="@dimen/image_size_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/margin_16"
+        android:background="@drawable/bg_circular_textview"
+        tools:text="HB"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="10sp"
+        android:autoSizeMaxTextSize="20sp"
+        android:autoSizeStepGranularity="1sp"
+        android:autoSizeTextType="uniform"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEmployeeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        app:layout_constraintBottom_toBottomOf="@+id/ivAvatar"
+        app:layout_constraintStart_toEndOf="@id/ivAvatar"
+        app:layout_constraintTop_toTopOf="@id/ivAvatar"
+        tools:text="Barco"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOrchardLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ivAvatar"
+        app:layout_constraintStart_toStartOf="@id/ivAvatar"
+        android:text="@string/lbl_orchard"
+        android:layout_marginTop="@dimen/margin_12"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOrchard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Benji (V12321321U)"
+        app:layout_constraintTop_toTopOf="@id/tvOrchardLbl"
+        app:layout_constraintBottom_toBottomOf="@id/tvOrchardLbl"
+        app:layout_constraintStart_toEndOf="@id/tvOrchardLbl"
+        android:layout_marginHorizontal="@dimen/margin_12"
+        android:textStyle="bold"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBlockLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_block"
+        app:layout_constraintTop_toBottomOf="@id/tvOrchardLbl"
+        app:layout_constraintStart_toStartOf="@id/tvOrchardLbl"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tvBlockLbl"
+        app:layout_constraintTop_toTopOf="@id/tvBlockLbl"
+        app:layout_constraintBottom_toBottomOf="@id/tvBlockLbl"
+        tools:text="UB12"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="@dimen/margin_12"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

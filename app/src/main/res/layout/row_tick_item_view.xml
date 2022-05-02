@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRowNo"
+        android:layout_width="@dimen/image_size_default"
+        android:layout_height="@dimen/image_size_default"
+        tools:text="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/bg_rate_type_btn"
+        android:backgroundTint="@color/btn_select_row"
+        android:textSize="14sp"
+        android:textColor="@color/btn_text"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivDot"
+        android:layout_width="@dimen/dot_size"
+        android:layout_height="@dimen/dot_size"
+        android:background="@drawable/bg_circular_textview"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:layout_gravity="top|end"
+        android:layout_margin="@dimen/margin_2"
+        android:visibility="gone"
+        />
+
+</FrameLayout>
